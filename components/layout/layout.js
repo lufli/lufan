@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../nav'
+import { Segment } from 'semantic-ui-react'
 
 const Layout = (props) => {
   return (
@@ -14,10 +15,16 @@ const Layout = (props) => {
       <div className="content">
         {props.children}
       </div>
+      <Segment inverted vertical textAlign='center'>
+        <span>*************************</span>
+      </Segment>
       <style jsx>{`
         .content {
-          max-width: 700px;
-          margin: auto;
+          width: 700px;
+          margin: 0 auto;
+          min-height: calc(100vh - 88px) !important;
+          padding: 15px;
+          overflow-y: hidden;
         }
       `}</style>
     </div>

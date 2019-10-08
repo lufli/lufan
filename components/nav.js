@@ -4,7 +4,7 @@ import { Container, Dropdown, Menu } from 'semantic-ui-react'
 const Nav = (props) => {
 
   return (
-    <Menu inverted className="nav-menu" style={{'border-radius': 0}}>
+    <Menu inverted className="nav-menu" style={{borderRadius: 0, margin: 0}}>
       <Container>
         <Menu.Item name='home' href='/' />
         <Menu.Item name='posts' href='/posts' />
